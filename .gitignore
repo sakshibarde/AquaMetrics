@@ -1,0 +1,36 @@
+# Python backend specific ignores
+backend/venv/
+backend/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+backend/database/water_quality.db
+# backend/static/scraped_data/latest_cpcb_data.json # Don't ignore - GitHub Action needs to commit this
+
+# Frontend specific ignores (assuming Vite/React)
+frontend/node_modules/
+frontend/dist/
+frontend/build/ # If using CRA or similar
+frontend/.env.local
+frontend/.env.*.local
+frontend/coverage/
+frontend/.DS_Store
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Editor/IDE specific ignores
+.vscode/ # VS Code specific settings/cache
+.history/ # VS Code Local History extension <-- ADDED
+
+# General ignores
+.DS_Store
+*.env
+*.env.*
+!.env.example # Often good to commit an example env file
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/downloads/ # Example: if you have a local downloads folder
+/uploads/   # Example: if you have local uploads
