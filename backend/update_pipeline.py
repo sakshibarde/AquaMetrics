@@ -94,7 +94,7 @@ except ImportError:
 
 # --- Configuration ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BACKEND_DIR = os.path.dirname(SCRIPT_DIR)
+BACKEND_DIR = SCRIPT_DIR
 
 DB_PATH = os.path.join(BACKEND_DIR, "database/water_quality.db")
 TABLE_NAME = "water_records"
