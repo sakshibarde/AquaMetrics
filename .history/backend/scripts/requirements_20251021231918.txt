@@ -1,0 +1,23 @@
+# Core Web Framework & Utilities
+Flask
+Flask-Cors
+pandas
+numpy
+requests
+APScheduler
+
+# Machine Learning & Data Processing
+tensorflow
+scikit-learn
+joblib # Often used with scikit-learn for saving scalers
+
+# Plotting (even if only used by batch jobs)
+plotly
+
+# Database (Part of standard library, but good practice to note)
+# sqlite3 # Usually included with Python
+
+# Optional: If your scraper uses it
+# beautifulsoup4
+# lxml # Often used with BeautifulSoup
+# selenium # If dynamic scraping is needed

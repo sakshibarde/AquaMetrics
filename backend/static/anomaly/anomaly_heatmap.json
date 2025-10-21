@@ -1,0 +1,1199 @@
+{
+  "data": [
+    {
+      "colorscale": [
+        [
+          0.0,
+          "rgb(255,245,240)"
+        ],
+        [
+          0.125,
+          "rgb(254,224,210)"
+        ],
+        [
+          0.25,
+          "rgb(252,187,161)"
+        ],
+        [
+          0.375,
+          "rgb(252,146,114)"
+        ],
+        [
+          0.5,
+          "rgb(251,106,74)"
+        ],
+        [
+          0.625,
+          "rgb(239,59,44)"
+        ],
+        [
+          0.75,
+          "rgb(203,24,29)"
+        ],
+        [
+          0.875,
+          "rgb(165,15,21)"
+        ],
+        [
+          1.0,
+          "rgb(103,0,13)"
+        ]
+      ],
+      "hoverinfo": "text",
+      "hovertext": [
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11785<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11785<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chloride</b><br>Station ID: 11785<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11785<br>Anomalies: 5.0<br>Dates: 2025-08-08, 2025-08-09",
+          "<b>Parameter: Depth</b><br>Station ID: 11785<br>Anomalies: 18.0<br>Dates: 2025-08-08, 2025-08-09",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11785<br>Anomalies: 18.0<br>Dates: 2025-08-08, 2025-08-09",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11785<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11785<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Level</b><br>Station ID: 11785<br>Anomalies: 18.0<br>Dates: 2025-08-08, 2025-08-09",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11785<br>Anomalies: 4.0<br>Dates: 2025-08-08",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11785<br>Anomalies: 15.0<br>Dates: 2025-08-08, 2025-08-09",
+          "<b>Parameter: pH</b><br>Station ID: 11785<br>Anomalies: 18.0<br>Dates: 2025-08-08, 2025-08-09"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11789<br>Anomalies: 32.0<br>Dates: 2025-08-07, 2025-08-08, 2025-08-11, 2025-08-12",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11789<br>Anomalies: 22.0<br>Dates: 2025-08-07, 2025-08-11, 2025-08-12",
+          "<b>Parameter: Chloride</b><br>Station ID: 11789<br>Anomalies: 31.0<br>Dates: 2025-08-07, 2025-08-08, 2025-08-11, 2025-08-12",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11789<br>Anomalies: 19.0<br>Dates: 2025-08-07, 2025-08-08",
+          "<b>Parameter: Depth</b><br>Station ID: 11789<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11789<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11789<br>Anomalies: 32.0<br>Dates: 2025-08-07, 2025-08-08, 2025-08-11, 2025-08-12",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11789<br>Anomalies: 27.0<br>Dates: 2025-08-07, 2025-08-08, 2025-08-11, 2025-08-12",
+          "<b>Parameter: Water Level</b><br>Station ID: 11789<br>Anomalies: 9.0<br>Dates: 2025-08-07",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11789<br>Anomalies: 13.0<br>Dates: 2025-08-07, 2025-08-08",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11789<br>Anomalies: 18.0<br>Dates: 2025-08-08, 2025-08-11, 2025-08-12",
+          "<b>Parameter: pH</b><br>Station ID: 11789<br>Anomalies: 32.0<br>Dates: 2025-08-07, 2025-08-08, 2025-08-11, 2025-08-12"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11790<br>Anomalies: 20.0<br>Dates: 2025-09-17, 2025-09-18",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11790<br>Anomalies: 17.0<br>Dates: 2025-09-18",
+          "<b>Parameter: Chloride</b><br>Station ID: 11790<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11790<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Depth</b><br>Station ID: 11790<br>Anomalies: 20.0<br>Dates: 2025-09-17, 2025-09-18",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11790<br>Anomalies: 20.0<br>Dates: 2025-09-17, 2025-09-18",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11790<br>Anomalies: 15.0<br>Dates: 2025-09-18",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11790<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Level</b><br>Station ID: 11790<br>Anomalies: 19.0<br>Dates: 2025-09-17, 2025-09-18",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11790<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11790<br>Anomalies: 15.0<br>Dates: 2025-09-17, 2025-09-18",
+          "<b>Parameter: pH</b><br>Station ID: 11790<br>Anomalies: 0.0<br>Dates: No anomalies"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11795<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11795<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chloride</b><br>Station ID: 11795<br>Anomalies: 1.0<br>Dates: 2025-10-14",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11795<br>Anomalies: 1.0<br>Dates: 2025-10-14",
+          "<b>Parameter: Depth</b><br>Station ID: 11795<br>Anomalies: 1.0<br>Dates: 2025-10-14",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11795<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11795<br>Anomalies: 1.0<br>Dates: 2025-10-14",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11795<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Level</b><br>Station ID: 11795<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11795<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11795<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11795<br>Anomalies: 0.0<br>Dates: No anomalies"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11797<br>Anomalies: 10.0<br>Dates: 2025-09-13, 2025-09-14",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11797<br>Anomalies: 10.0<br>Dates: 2025-09-13, 2025-09-14",
+          "<b>Parameter: Chloride</b><br>Station ID: 11797<br>Anomalies: 10.0<br>Dates: 2025-09-13, 2025-09-14",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11797<br>Anomalies: 9.0<br>Dates: 2025-09-13, 2025-09-14",
+          "<b>Parameter: Depth</b><br>Station ID: 11797<br>Anomalies: 10.0<br>Dates: 2025-09-13, 2025-09-14",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11797<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11797<br>Anomalies: 10.0<br>Dates: 2025-09-13, 2025-09-14",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11797<br>Anomalies: 10.0<br>Dates: 2025-09-13, 2025-09-14",
+          "<b>Parameter: Water Level</b><br>Station ID: 11797<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11797<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11797<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11797<br>Anomalies: 6.0<br>Dates: 2025-09-13, 2025-09-14"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11799<br>Anomalies: 5.0<br>Dates: 2025-08-21",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11799<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chloride</b><br>Station ID: 11799<br>Anomalies: 12.0<br>Dates: 2025-08-21, 2025-08-22",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11799<br>Anomalies: 11.0<br>Dates: 2025-08-21, 2025-08-22",
+          "<b>Parameter: Depth</b><br>Station ID: 11799<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11799<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11799<br>Anomalies: 13.0<br>Dates: 2025-08-21, 2025-08-22",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11799<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Level</b><br>Station ID: 11799<br>Anomalies: 13.0<br>Dates: 2025-08-21, 2025-08-22",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11799<br>Anomalies: 13.0<br>Dates: 2025-08-21, 2025-08-22",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11799<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11799<br>Anomalies: 13.0<br>Dates: 2025-08-21, 2025-08-22"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11800<br>Anomalies: 16.0<br>Dates: 2025-08-25, 2025-09-13, 2025-09-14",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11800<br>Anomalies: 16.0<br>Dates: 2025-08-25, 2025-09-13, 2025-09-14",
+          "<b>Parameter: Chloride</b><br>Station ID: 11800<br>Anomalies: 10.0<br>Dates: 2025-09-13, 2025-09-14",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11800<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Depth</b><br>Station ID: 11800<br>Anomalies: 16.0<br>Dates: 2025-08-25, 2025-09-13, 2025-09-14",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11800<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11800<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11800<br>Anomalies: 16.0<br>Dates: 2025-08-25, 2025-09-13, 2025-09-14",
+          "<b>Parameter: Water Level</b><br>Station ID: 11800<br>Anomalies: 16.0<br>Dates: 2025-08-25, 2025-09-13, 2025-09-14",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11800<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11800<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11800<br>Anomalies: 0.0<br>Dates: No anomalies"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11801<br>Anomalies: 3.0<br>Dates: 2025-08-14",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11801<br>Anomalies: 3.0<br>Dates: 2025-08-14",
+          "<b>Parameter: Chloride</b><br>Station ID: 11801<br>Anomalies: 11.0<br>Dates: 2025-08-22, 2025-08-23",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11801<br>Anomalies: 3.0<br>Dates: 2025-08-14",
+          "<b>Parameter: Depth</b><br>Station ID: 11801<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11801<br>Anomalies: 14.0<br>Dates: 2025-08-14, 2025-08-22, 2025-08-23",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11801<br>Anomalies: 11.0<br>Dates: 2025-08-22, 2025-08-23",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11801<br>Anomalies: 3.0<br>Dates: 2025-08-14",
+          "<b>Parameter: Water Level</b><br>Station ID: 11801<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11801<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11801<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11801<br>Anomalies: 11.0<br>Dates: 2025-08-22, 2025-08-23"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11804<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11804<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chloride</b><br>Station ID: 11804<br>Anomalies: 13.0<br>Dates: 2025-10-02, 2025-10-03",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11804<br>Anomalies: 11.0<br>Dates: 2025-10-02, 2025-10-03",
+          "<b>Parameter: Depth</b><br>Station ID: 11804<br>Anomalies: 26.0<br>Dates: 2025-10-02, 2025-10-03, 2025-10-04, 2025-10-05",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11804<br>Anomalies: 15.0<br>Dates: 2025-10-02, 2025-10-03, 2025-10-04",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11804<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11804<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Level</b><br>Station ID: 11804<br>Anomalies: 26.0<br>Dates: 2025-10-02, 2025-10-03, 2025-10-04, 2025-10-05",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11804<br>Anomalies: 11.0<br>Dates: 2025-10-04",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11804<br>Anomalies: 26.0<br>Dates: 2025-10-02, 2025-10-03, 2025-10-04, 2025-10-05",
+          "<b>Parameter: pH</b><br>Station ID: 11804<br>Anomalies: 13.0<br>Dates: 2025-10-04, 2025-10-05"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11805<br>Anomalies: 36.0<br>Dates: 2025-08-01, 2025-10-02, 2025-10-03, 2025-10-04",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11805<br>Anomalies: 36.0<br>Dates: 2025-08-01, 2025-10-02, 2025-10-03, 2025-10-04",
+          "<b>Parameter: Chloride</b><br>Station ID: 11805<br>Anomalies: 35.0<br>Dates: 2025-08-01, 2025-10-03, 2025-10-04",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11805<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Depth</b><br>Station ID: 11805<br>Anomalies: 20.0<br>Dates: 2025-10-01, 2025-10-02, 2025-10-03",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11805<br>Anomalies: 29.0<br>Dates: 2025-10-02, 2025-10-03, 2025-10-04",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11805<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11805<br>Anomalies: 36.0<br>Dates: 2025-08-01, 2025-10-02, 2025-10-03, 2025-10-04",
+          "<b>Parameter: Water Level</b><br>Station ID: 11805<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11805<br>Anomalies: 9.0<br>Dates: 2025-10-01, 2025-10-02",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11805<br>Anomalies: 43.0<br>Dates: 2025-08-01, 2025-10-01, 2025-10-02, 2025-10-03, 2025-10-04",
+          "<b>Parameter: pH</b><br>Station ID: 11805<br>Anomalies: 29.0<br>Dates: 2025-10-02, 2025-10-03, 2025-10-04"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11806<br>Anomalies: 13.0<br>Dates: 2025-08-13, 2025-09-24",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11806<br>Anomalies: 15.0<br>Dates: 2025-08-13, 2025-09-24",
+          "<b>Parameter: Chloride</b><br>Station ID: 11806<br>Anomalies: 15.0<br>Dates: 2025-09-24, 2025-09-25",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11806<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Depth</b><br>Station ID: 11806<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11806<br>Anomalies: 15.0<br>Dates: 2025-09-24, 2025-09-25",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11806<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11806<br>Anomalies: 14.0<br>Dates: 2025-08-13, 2025-09-24",
+          "<b>Parameter: Water Level</b><br>Station ID: 11806<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11806<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11806<br>Anomalies: 23.0<br>Dates: 2025-08-13, 2025-09-24, 2025-09-25",
+          "<b>Parameter: pH</b><br>Station ID: 11806<br>Anomalies: 23.0<br>Dates: 2025-08-13, 2025-09-24, 2025-09-25"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11807<br>Anomalies: 37.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-16, 2025-08-17",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11807<br>Anomalies: 37.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-16, 2025-08-17",
+          "<b>Parameter: Chloride</b><br>Station ID: 11807<br>Anomalies: 32.0<br>Dates: 2025-08-14, 2025-08-16, 2025-08-17",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11807<br>Anomalies: 24.0<br>Dates: 2025-08-16, 2025-08-17",
+          "<b>Parameter: Depth</b><br>Station ID: 11807<br>Anomalies: 37.0<br>Dates: 2025-08-16, 2025-08-17, 2025-10-03",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11807<br>Anomalies: 37.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-16, 2025-08-17",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11807<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11807<br>Anomalies: 36.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-16, 2025-08-17",
+          "<b>Parameter: Water Level</b><br>Station ID: 11807<br>Anomalies: 37.0<br>Dates: 2025-08-16, 2025-08-17, 2025-10-03",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11807<br>Anomalies: 18.0<br>Dates: 2025-08-16, 2025-10-03",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11807<br>Anomalies: 20.0<br>Dates: 2025-08-16, 2025-08-17",
+          "<b>Parameter: pH</b><br>Station ID: 11807<br>Anomalies: 26.0<br>Dates: 2025-08-16, 2025-08-17"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11808<br>Anomalies: 11.0<br>Dates: 2025-08-10, 2025-08-11",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11808<br>Anomalies: 11.0<br>Dates: 2025-08-10, 2025-08-11",
+          "<b>Parameter: Chloride</b><br>Station ID: 11808<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11808<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Depth</b><br>Station ID: 11808<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11808<br>Anomalies: 11.0<br>Dates: 2025-08-10, 2025-08-11",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11808<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11808<br>Anomalies: 11.0<br>Dates: 2025-08-10, 2025-08-11",
+          "<b>Parameter: Water Level</b><br>Station ID: 11808<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11808<br>Anomalies: 9.0<br>Dates: 2025-08-10, 2025-08-11",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11808<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11808<br>Anomalies: 0.0<br>Dates: No anomalies"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11811<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11811<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chloride</b><br>Station ID: 11811<br>Anomalies: 10.0<br>Dates: 2025-08-11, 2025-08-12",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11811<br>Anomalies: 10.0<br>Dates: 2025-08-11, 2025-08-12",
+          "<b>Parameter: Depth</b><br>Station ID: 11811<br>Anomalies: 10.0<br>Dates: 2025-08-11, 2025-08-12",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11811<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11811<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11811<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Level</b><br>Station ID: 11811<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11811<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11811<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11811<br>Anomalies: 1.0<br>Dates: 2025-08-12"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11812<br>Anomalies: 3.0<br>Dates: 2025-07-30",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11812<br>Anomalies: 3.0<br>Dates: 2025-07-30",
+          "<b>Parameter: Chloride</b><br>Station ID: 11812<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11812<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Depth</b><br>Station ID: 11812<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11812<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11812<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11812<br>Anomalies: 3.0<br>Dates: 2025-07-30",
+          "<b>Parameter: Water Level</b><br>Station ID: 11812<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11812<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11812<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11812<br>Anomalies: 0.0<br>Dates: No anomalies"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11813<br>Anomalies: 58.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-17, 2025-08-18, 2025-10-10, 2025-10-11, 2025-10-12",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11813<br>Anomalies: 77.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-17, 2025-08-18, 2025-10-10, 2025-10-11, 2025-10-12",
+          "<b>Parameter: Chloride</b><br>Station ID: 11813<br>Anomalies: 21.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-17, 2025-08-18",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11813<br>Anomalies: 55.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-17, 2025-08-18, 2025-10-11, 2025-10-12",
+          "<b>Parameter: Depth</b><br>Station ID: 11813<br>Anomalies: 44.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-17, 2025-08-18",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11813<br>Anomalies: 20.0<br>Dates: 2025-10-11, 2025-10-12",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11813<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11813<br>Anomalies: 61.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-17, 2025-08-18, 2025-10-11, 2025-10-12",
+          "<b>Parameter: Water Level</b><br>Station ID: 11813<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11813<br>Anomalies: 44.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-17, 2025-08-18",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11813<br>Anomalies: 67.0<br>Dates: 2025-08-13, 2025-08-14, 2025-08-17, 2025-08-18, 2025-10-10, 2025-10-11, 2025-10-12",
+          "<b>Parameter: pH</b><br>Station ID: 11813<br>Anomalies: 56.0<br>Dates: 2025-08-14, 2025-08-17, 2025-08-18, 2025-10-10, 2025-10-11, 2025-10-12"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11814<br>Anomalies: 16.0<br>Dates: 2025-09-23, 2025-09-24",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11814<br>Anomalies: 16.0<br>Dates: 2025-09-23, 2025-09-24",
+          "<b>Parameter: Chloride</b><br>Station ID: 11814<br>Anomalies: 2.0<br>Dates: 2025-08-08, 2025-08-09",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11814<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Depth</b><br>Station ID: 11814<br>Anomalies: 1.0<br>Dates: 2025-08-08",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11814<br>Anomalies: 18.0<br>Dates: 2025-08-08, 2025-08-09, 2025-09-23, 2025-09-24",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11814<br>Anomalies: 14.0<br>Dates: 2025-09-23, 2025-09-24",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11814<br>Anomalies: 18.0<br>Dates: 2025-08-08, 2025-08-09, 2025-09-23, 2025-09-24",
+          "<b>Parameter: Water Level</b><br>Station ID: 11814<br>Anomalies: 18.0<br>Dates: 2025-08-08, 2025-08-09, 2025-09-23, 2025-09-24",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11814<br>Anomalies: 10.0<br>Dates: 2025-09-23, 2025-09-24",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11814<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11814<br>Anomalies: 16.0<br>Dates: 2025-09-23, 2025-09-24"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11815<br>Anomalies: 28.0<br>Dates: 2025-08-16, 2025-08-18, 2025-08-19",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11815<br>Anomalies: 39.0<br>Dates: 2025-08-16, 2025-08-17, 2025-08-18, 2025-08-19",
+          "<b>Parameter: Chloride</b><br>Station ID: 11815<br>Anomalies: 16.0<br>Dates: 2025-08-15, 2025-08-16, 2025-08-17, 2025-08-18",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11815<br>Anomalies: 17.0<br>Dates: 2025-08-15, 2025-08-16",
+          "<b>Parameter: Depth</b><br>Station ID: 11815<br>Anomalies: 23.0<br>Dates: 2025-08-15, 2025-08-16, 2025-08-17",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11815<br>Anomalies: 40.0<br>Dates: 2025-08-16, 2025-08-17, 2025-08-18, 2025-08-19",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11815<br>Anomalies: 37.0<br>Dates: 2025-08-15, 2025-08-16, 2025-08-17, 2025-08-18, 2025-08-19",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11815<br>Anomalies: 29.0<br>Dates: 2025-08-16, 2025-08-17, 2025-08-18, 2025-08-19",
+          "<b>Parameter: Water Level</b><br>Station ID: 11815<br>Anomalies: 26.0<br>Dates: 2025-08-16, 2025-08-17",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11815<br>Anomalies: 46.0<br>Dates: 2025-08-15, 2025-08-16, 2025-08-17, 2025-08-18, 2025-08-19",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11815<br>Anomalies: 35.0<br>Dates: 2025-08-16, 2025-08-17, 2025-08-18, 2025-08-19",
+          "<b>Parameter: pH</b><br>Station ID: 11815<br>Anomalies: 12.0<br>Dates: 2025-08-16, 2025-08-17"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11816<br>Anomalies: 15.0<br>Dates: 2025-09-26",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11816<br>Anomalies: 16.0<br>Dates: 2025-09-26",
+          "<b>Parameter: Chloride</b><br>Station ID: 11816<br>Anomalies: 16.0<br>Dates: 2025-09-26",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11816<br>Anomalies: 16.0<br>Dates: 2025-09-26",
+          "<b>Parameter: Depth</b><br>Station ID: 11816<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11816<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11816<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11816<br>Anomalies: 15.0<br>Dates: 2025-09-26",
+          "<b>Parameter: Water Level</b><br>Station ID: 11816<br>Anomalies: 2.0<br>Dates: 2025-09-26",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11816<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11816<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: pH</b><br>Station ID: 11816<br>Anomalies: 0.0<br>Dates: No anomalies"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11818<br>Anomalies: 10.0<br>Dates: 2025-09-02",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11818<br>Anomalies: 10.0<br>Dates: 2025-09-02",
+          "<b>Parameter: Chloride</b><br>Station ID: 11818<br>Anomalies: 10.0<br>Dates: 2025-09-02",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11818<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Depth</b><br>Station ID: 11818<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11818<br>Anomalies: 10.0<br>Dates: 2025-09-02",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11818<br>Anomalies: 7.0<br>Dates: 2025-09-02",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11818<br>Anomalies: 6.0<br>Dates: 2025-09-02",
+          "<b>Parameter: Water Level</b><br>Station ID: 11818<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11818<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11818<br>Anomalies: 10.0<br>Dates: 2025-09-02",
+          "<b>Parameter: pH</b><br>Station ID: 11818<br>Anomalies: 10.0<br>Dates: 2025-09-02"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11821<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11821<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Chloride</b><br>Station ID: 11821<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11821<br>Anomalies: 27.0<br>Dates: 2025-08-08, 2025-08-09, 2025-10-05, 2025-10-06",
+          "<b>Parameter: Depth</b><br>Station ID: 11821<br>Anomalies: 27.0<br>Dates: 2025-08-08, 2025-08-09, 2025-10-05, 2025-10-06",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11821<br>Anomalies: 21.0<br>Dates: 2025-08-09, 2025-10-13, 2025-10-14",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11821<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11821<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Water Level</b><br>Station ID: 11821<br>Anomalies: 43.0<br>Dates: 2025-08-08, 2025-08-09, 2025-10-05, 2025-10-06, 2025-10-13, 2025-10-14",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11821<br>Anomalies: 40.0<br>Dates: 2025-08-08, 2025-08-09, 2025-10-05, 2025-10-06, 2025-10-13, 2025-10-14",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11821<br>Anomalies: 18.0<br>Dates: 2025-08-08, 2025-08-09",
+          "<b>Parameter: pH</b><br>Station ID: 11821<br>Anomalies: 13.0<br>Dates: 2025-10-13, 2025-10-14"
+        ],
+        [
+          "<b>Parameter: Biochemical Oxygen Demand</b><br>Station ID: 11822<br>Anomalies: 26.0<br>Dates: 2025-08-12, 2025-08-13",
+          "<b>Parameter: Chemical Oxygen Demand</b><br>Station ID: 11822<br>Anomalies: 26.0<br>Dates: 2025-08-12, 2025-08-13",
+          "<b>Parameter: Chloride</b><br>Station ID: 11822<br>Anomalies: 31.0<br>Dates: 2025-08-12, 2025-08-13, 2025-10-05, 2025-10-06",
+          "<b>Parameter: Conductivity</b><br>Station ID: 11822<br>Anomalies: 7.0<br>Dates: 2025-10-05",
+          "<b>Parameter: Depth</b><br>Station ID: 11822<br>Anomalies: 47.0<br>Dates: 2025-08-12, 2025-08-13, 2025-10-05, 2025-10-06",
+          "<b>Parameter: Dissolved Oxygen</b><br>Station ID: 11822<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Nitrate</b><br>Station ID: 11822<br>Anomalies: 0.0<br>Dates: No anomalies",
+          "<b>Parameter: Total Organic Carbon</b><br>Station ID: 11822<br>Anomalies: 26.0<br>Dates: 2025-08-12, 2025-08-13",
+          "<b>Parameter: Water Level</b><br>Station ID: 11822<br>Anomalies: 47.0<br>Dates: 2025-08-12, 2025-08-13, 2025-10-05, 2025-10-06",
+          "<b>Parameter: Water Temperature</b><br>Station ID: 11822<br>Anomalies: 20.0<br>Dates: 2025-10-05, 2025-10-06",
+          "<b>Parameter: Water Turbidity</b><br>Station ID: 11822<br>Anomalies: 12.0<br>Dates: 2025-10-05, 2025-10-06",
+          "<b>Parameter: pH</b><br>Station ID: 11822<br>Anomalies: 16.0<br>Dates: 2025-10-05, 2025-10-06"
+        ]
+      ],
+      "text": {
+        "dtype": "f8",
+        "bdata": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFEAAAAAAAAAyQAAAAAAAADJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADJAAAAAAAAAEEAAAAAAAAAuQAAAAAAAADJAAAAAAAAAQEAAAAAAAAA2QAAAAAAAAD9AAAAAAAAAM0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAA7QAAAAAAAACJAAAAAAAAAKkAAAAAAAAAyQAAAAAAAAEBAAAAAAAAANEAAAAAAAAAxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0QAAAAAAAADRAAAAAAAAALkAAAAAAAAAAAAAAAAAAADNAAAAAAAAAAAAAAAAAAAAuQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAA8D8AAAAAAADwPwAAAAAAAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJEAAAAAAAAAkQAAAAAAAACRAAAAAAAAAIkAAAAAAAAAkQAAAAAAAAAAAAAAAAAAAJEAAAAAAAAAkQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAAAAAAAFEAAAAAAAAAAAAAAAAAAAChAAAAAAAAAJkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKkAAAAAAAAAAAAAAAAAAACpAAAAAAAAAKkAAAAAAAAAAAAAAAAAAACpAAAAAAAAAMEAAAAAAAAAwQAAAAAAAACRAAAAAAAAAAAAAAAAAAAAwQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwQAAAAAAAADBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEAAAAAAAAAIQAAAAAAAACZAAAAAAAAACEAAAAAAAAAAAAAAAAAAACxAAAAAAAAAJkAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpAAAAAAAAAJkAAAAAAAAA6QAAAAAAAAC5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAADpAAAAAAAAAJkAAAAAAAAA6QAAAAAAAACpAAAAAAAAAQkAAAAAAAABCQAAAAAAAgEFAAAAAAAAAAAAAAAAAAAA0QAAAAAAAAD1AAAAAAAAAAAAAAAAAAABCQAAAAAAAAAAAAAAAAAAAIkAAAAAAAIBFQAAAAAAAAD1AAAAAAAAAKkAAAAAAAAAuQAAAAAAAAC5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC5AAAAAAAAAAAAAAAAAAAAsQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3QAAAAAAAADdAAAAAAACAQkAAAAAAAIBCQAAAAAAAAEBAAAAAAAAAOEAAAAAAAIBCQAAAAAAAgEJAAAAAAAAAAAAAAAAAAABCQAAAAAAAgEJAAAAAAAAAMkAAAAAAAAA0QAAAAAAAADpAAAAAAAAAJkAAAAAAAAAmQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZAAAAAAAAAAAAAAAAAAAAmQAAAAAAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRAAAAAAAAAJEAAAAAAAAAkQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAACEAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATUAAAAAAAEBTQAAAAAAAADVAAAAAAACAS0AAAAAAAABGQAAAAAAAADRAAAAAAAAAAAAAAAAAAIBOQAAAAAAAAAAAAAAAAAAARkAAAAAAAMBQQAAAAAAAAExAAAAAAAAAMEAAAAAAAAAwQAAAAAAAAABAAAAAAAAAAAAAAAAAAADwPwAAAAAAADJAAAAAAAAALEAAAAAAAAAyQAAAAAAAADJAAAAAAAAAJEAAAAAAAAAAAAAAAAAAADBAAAAAAAAAPEAAAAAAAIBDQAAAAAAAADBAAAAAAAAAMUAAAAAAAAA3QAAAAAAAAERAAAAAAACAQkAAAAAAAAA9QAAAAAAAADpAAAAAAAAAR0AAAAAAAIBBQAAAAAAAAChAAAAAAAAALkAAAAAAAAAwQAAAAAAAADBAAAAAAAAAMEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJEAAAAAAAAAkQAAAAAAAACRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRAAAAAAAAAHEAAAAAAAAAYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkQAAAAAAAACRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO0AAAAAAAAA7QAAAAAAAADVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEVAAAAAAAAAREAAAAAAAAAyQAAAAAAAACpAAAAAAAAAOkAAAAAAAAA6QAAAAAAAAD9AAAAAAAAAHEAAAAAAAIBHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6QAAAAAAAgEdAAAAAAAAANEAAAAAAAAAoQAAAAAAAADBA",
+        "shape": "22, 12"
+      },
+      "texttemplate": "%{text:.0f}",
+      "x": [
+        "Biochemical Oxygen Demand",
+        "Chemical Oxygen Demand",
+        "Chloride",
+        "Conductivity",
+        "Depth",
+        "Dissolved Oxygen",
+        "Nitrate",
+        "Total Organic Carbon",
+        "Water Level",
+        "Water Temperature",
+        "Water Turbidity",
+        "pH"
+      ],
+      "y": [
+        "11785",
+        "11789",
+        "11790",
+        "11795",
+        "11797",
+        "11799",
+        "11800",
+        "11801",
+        "11804",
+        "11805",
+        "11806",
+        "11807",
+        "11808",
+        "11811",
+        "11812",
+        "11813",
+        "11814",
+        "11815",
+        "11816",
+        "11818",
+        "11821",
+        "11822"
+      ],
+      "z": {
+        "dtype": "f8",
+        "bdata": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFEAAAAAAAAAyQAAAAAAAADJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADJAAAAAAAAAEEAAAAAAAAAuQAAAAAAAADJAAAAAAAAAQEAAAAAAAAA2QAAAAAAAAD9AAAAAAAAAM0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAA7QAAAAAAAACJAAAAAAAAAKkAAAAAAAAAyQAAAAAAAAEBAAAAAAAAANEAAAAAAAAAxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0QAAAAAAAADRAAAAAAAAALkAAAAAAAAAAAAAAAAAAADNAAAAAAAAAAAAAAAAAAAAuQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAA8D8AAAAAAADwPwAAAAAAAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJEAAAAAAAAAkQAAAAAAAACRAAAAAAAAAIkAAAAAAAAAkQAAAAAAAAAAAAAAAAAAAJEAAAAAAAAAkQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAAAAAAAFEAAAAAAAAAAAAAAAAAAAChAAAAAAAAAJkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKkAAAAAAAAAAAAAAAAAAACpAAAAAAAAAKkAAAAAAAAAAAAAAAAAAACpAAAAAAAAAMEAAAAAAAAAwQAAAAAAAACRAAAAAAAAAAAAAAAAAAAAwQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwQAAAAAAAADBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEAAAAAAAAAIQAAAAAAAACZAAAAAAAAACEAAAAAAAAAAAAAAAAAAACxAAAAAAAAAJkAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpAAAAAAAAAJkAAAAAAAAA6QAAAAAAAAC5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAADpAAAAAAAAAJkAAAAAAAAA6QAAAAAAAACpAAAAAAAAAQkAAAAAAAABCQAAAAAAAgEFAAAAAAAAAAAAAAAAAAAA0QAAAAAAAAD1AAAAAAAAAAAAAAAAAAABCQAAAAAAAAAAAAAAAAAAAIkAAAAAAAIBFQAAAAAAAAD1AAAAAAAAAKkAAAAAAAAAuQAAAAAAAAC5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC5AAAAAAAAAAAAAAAAAAAAsQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3QAAAAAAAADdAAAAAAACAQkAAAAAAAIBCQAAAAAAAAEBAAAAAAAAAOEAAAAAAAIBCQAAAAAAAgEJAAAAAAAAAAAAAAAAAAABCQAAAAAAAgEJAAAAAAAAAMkAAAAAAAAA0QAAAAAAAADpAAAAAAAAAJkAAAAAAAAAmQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZAAAAAAAAAAAAAAAAAAAAmQAAAAAAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRAAAAAAAAAJEAAAAAAAAAkQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAACEAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATUAAAAAAAEBTQAAAAAAAADVAAAAAAACAS0AAAAAAAABGQAAAAAAAADRAAAAAAAAAAAAAAAAAAIBOQAAAAAAAAAAAAAAAAAAARkAAAAAAAMBQQAAAAAAAAExAAAAAAAAAMEAAAAAAAAAwQAAAAAAAAABAAAAAAAAAAAAAAAAAAADwPwAAAAAAADJAAAAAAAAALEAAAAAAAAAyQAAAAAAAADJAAAAAAAAAJEAAAAAAAAAAAAAAAAAAADBAAAAAAAAAPEAAAAAAAIBDQAAAAAAAADBAAAAAAAAAMUAAAAAAAAA3QAAAAAAAAERAAAAAAACAQkAAAAAAAAA9QAAAAAAAADpAAAAAAAAAR0AAAAAAAIBBQAAAAAAAAChAAAAAAAAALkAAAAAAAAAwQAAAAAAAADBAAAAAAAAAMEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJEAAAAAAAAAkQAAAAAAAACRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRAAAAAAAAAHEAAAAAAAAAYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkQAAAAAAAACRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO0AAAAAAAAA7QAAAAAAAADVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEVAAAAAAAAAREAAAAAAAAAyQAAAAAAAACpAAAAAAAAAOkAAAAAAAAA6QAAAAAAAAD9AAAAAAAAAHEAAAAAAAIBHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6QAAAAAAAgEdAAAAAAAAANEAAAAAAAAAoQAAAAAAAADBA",
+        "shape": "22, 12"
+      },
+      "type": "heatmap"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "histogram2dcontour": [
+          {
+            "type": "histogram2dcontour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "choropleth": [
+          {
+            "type": "choropleth",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "histogram2d": [
+          {
+            "type": "histogram2d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "heatmap": [
+          {
+            "type": "heatmap",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "contourcarpet": [
+          {
+            "type": "contourcarpet",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "contour": [
+          {
+            "type": "contour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "surface": [
+          {
+            "type": "surface",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "mesh3d": [
+          {
+            "type": "mesh3d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "scatter": [
+          {
+            "fillpattern": {
+              "fillmode": "overlay",
+              "size": 10,
+              "solidity": 0.2
+            },
+            "type": "scatter"
+          }
+        ],
+        "parcoords": [
+          {
+            "type": "parcoords",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "type": "scatterpolargl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "bar": [
+          {
+            "error_x": {
+              "color": "#2a3f5f"
+            },
+            "error_y": {
+              "color": "#2a3f5f"
+            },
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "bar"
+          }
+        ],
+        "scattergeo": [
+          {
+            "type": "scattergeo",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolar": [
+          {
+            "type": "scatterpolar",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "histogram"
+          }
+        ],
+        "scattergl": [
+          {
+            "type": "scattergl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatter3d": [
+          {
+            "type": "scatter3d",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermap": [
+          {
+            "type": "scattermap",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermapbox": [
+          {
+            "type": "scattermapbox",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterternary": [
+          {
+            "type": "scatterternary",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattercarpet": [
+          {
+            "type": "scattercarpet",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "baxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "type": "carpet"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": {
+                "color": "#EBF0F8"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "header": {
+              "fill": {
+                "color": "#C8D4E3"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "type": "table"
+          }
+        ],
+        "barpolar": [
+          {
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "pie": [
+          {
+            "automargin": true,
+            "type": "pie"
+          }
+        ]
+      },
+      "layout": {
+        "autotypenumbers": "strict",
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": {
+          "color": "#2a3f5f"
+        },
+        "hovermode": "closest",
+        "hoverlabel": {
+          "align": "left"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "#E5ECF6",
+        "polar": {
+          "bgcolor": "#E5ECF6",
+          "angularaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "radialaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "ternary": {
+          "bgcolor": "#E5ECF6",
+          "aaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "caxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "coloraxis": {
+          "colorbar": {
+            "outlinewidth": 0,
+            "ticks": ""
+          }
+        },
+        "colorscale": {
+          "sequential": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "sequentialminus": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "diverging": [
+            [
+              0,
+              "#8e0152"
+            ],
+            [
+              0.1,
+              "#c51b7d"
+            ],
+            [
+              0.2,
+              "#de77ae"
+            ],
+            [
+              0.3,
+              "#f1b6da"
+            ],
+            [
+              0.4,
+              "#fde0ef"
+            ],
+            [
+              0.5,
+              "#f7f7f7"
+            ],
+            [
+              0.6,
+              "#e6f5d0"
+            ],
+            [
+              0.7,
+              "#b8e186"
+            ],
+            [
+              0.8,
+              "#7fbc41"
+            ],
+            [
+              0.9,
+              "#4d9221"
+            ],
+            [
+              1,
+              "#276419"
+            ]
+          ]
+        },
+        "xaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "yaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "zaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          }
+        },
+        "shapedefaults": {
+          "line": {
+            "color": "#2a3f5f"
+          }
+        },
+        "annotationdefaults": {
+          "arrowcolor": "#2a3f5f",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "geo": {
+          "bgcolor": "white",
+          "landcolor": "#E5ECF6",
+          "subunitcolor": "white",
+          "showland": true,
+          "showlakes": true,
+          "lakecolor": "white"
+        },
+        "title": {
+          "x": 0.05
+        },
+        "mapbox": {
+          "style": "light"
+        }
+      }
+    },
+    "xaxis": {
+      "title": {
+        "text": "Parameter"
+      },
+      "tickangle": -45
+    },
+    "yaxis": {
+      "title": {
+        "text": "Station ID"
+      },
+      "type": "category"
+    },
+    "title": {
+      "text": "Anomaly Count per Parameter and Station"
+    },
+    "height": 600
+  }
+}
