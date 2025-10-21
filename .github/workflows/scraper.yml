@@ -7,7 +7,7 @@ on:
     - cron: '5 * * * *'
 permissions:
   contents: write
-  
+
 jobs:
   # Job 1: Scrape data and commit the result JSON
   scrape-and-commit:
@@ -80,7 +80,7 @@ jobs:
           python -m pip install --upgrade pip
           # Install all packages needed by update_pipeline.py AND run_all_batch_jobs.py
           # Adjust this list based on your actual project requirements!
-          pip install pandas requests numpy tensorflow scikit-learn plotly joblib apscheduler Flask Flask-Cors sqlite3 # sqlite3 might already be part of standard lib
+          pip install pandas requests numpy tensorflow scikit-learn plotly joblib apscheduler Flask Flask-Cors
 
       - name: Run Database Update Pipeline
         # Run the script located in the backend directory
