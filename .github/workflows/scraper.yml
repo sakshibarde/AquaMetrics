@@ -62,6 +62,8 @@ jobs:
     runs-on: ubuntu-latest
     # This job depends on the successful completion of the scrape job
     needs: scrape-and-commit
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -104,6 +106,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           echo "Checking for changes in generated files..."
+          git add backend/database/water_quality.db
           # Add all potentially generated/updated files from batch jobs
           git add backend/static/predictions/daily/*.json
           git add backend/static/predictions/weekly/*.json

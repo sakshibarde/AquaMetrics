@@ -10,6 +10,8 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # os.path.dirname(SCRIPT_DIR) is .../backend
 BACKEND_DIR = os.path.dirname(SCRIPT_DIR) 
 DB_PATH = os.path.join(BACKEND_DIR, "database/water_quality.db") # Corrected Path
+DB_DIR = os.path.dirname(DB_PATH)
+os.makedirs(DB_DIR, exist_ok=True)
 # --- END FIX ---
 
 TABLE_NAME = "water_records"

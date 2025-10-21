@@ -5,7 +5,7 @@ backend/__pycache__/
 *.pyo
 *.pyd
 *.log
-backend/database/water_quality.db
+# backend/database/water_quality.db
 # backend/static/scraped_data/latest_cpcb_data.json # Don't ignore - GitHub Action needs to commit this
 
 # Frontend specific ignores (assuming Vite/React)
