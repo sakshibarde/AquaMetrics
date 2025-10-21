@@ -2,9 +2,17 @@
 import pandas as pd
 import sqlite3
 from sklearn.preprocessing import StandardScaler
+import os
 
-DB_PATH = "database/water_quality.db" # Corrected Path
-TABLE_NAME = "water_records"         # Corrected Table Name
+# --- FIX: Use absolute path ---
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# SCRIPT_DIR is .../backend/models
+# os.path.dirname(SCRIPT_DIR) is .../backend
+BACKEND_DIR = os.path.dirname(SCRIPT_DIR) 
+DB_PATH = os.path.join(BACKEND_DIR, "database/water_quality.db") # Corrected Path
+# --- END FIX ---
+
+TABLE_NAME = "water_records"
 
 def organize_records(df: pd.DataFrame):
     # Pivot: stationId + timestamp + timestampDate → columns = parameterName
