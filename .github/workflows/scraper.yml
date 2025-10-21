@@ -5,7 +5,9 @@ on:
   schedule:
     # Runs near the beginning of every hour (e.g., 5 mins past)
     - cron: '5 * * * *'
-
+permissions:
+  contents: write
+  
 jobs:
   # Job 1: Scrape data and commit the result JSON
   scrape-and-commit:
