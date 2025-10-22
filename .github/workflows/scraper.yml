@@ -86,6 +86,20 @@ jobs:
         # Run the script located in the backend directory
         run: python backend/update_pipeline.py
 
+      - name: Commit Updated Database (Hourly)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # Check if the database file actually changed
+          git add backend/database/water_quality.db
+          if git diff --staged --quiet; then
+            echo "No changes to database file."
+          else
+            echo "Database updated. Committing..."
+            git commit -m "Hourly database update"
+            git push
+          fi
+
       # --- Daily Batch Job Execution ---
       # Runs only once a day, around 00:05 UTC. Adjust cron time as needed.
       # Uses github.run_attempt to avoid re-running on workflow retries within the same hour.
@@ -104,7 +118,6 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           echo "Checking for changes in generated files..."
-          git add backend/database/water_quality.db
           # Add all potentially generated/updated files from batch jobs
           git add backend/static/predictions/daily/*.json
           git add backend/static/predictions/weekly/*.json
