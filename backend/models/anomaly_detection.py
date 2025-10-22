@@ -14,10 +14,15 @@ import warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 warnings.filterwarnings('ignore', category=UserWarning, module='tensorflow')
 
-# --- CONFIGURATION ---
-DB_PATH = "database/water_quality.db"
+# --- Build Absolute Paths ---
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+BACKEND_DIR = os.path.dirname(SCRIPT_DIR)
+# --- END NEW ---
+
+# --- CONFIGURATION (Using Absolute Paths) ---
+DB_PATH = os.path.join(BACKEND_DIR, "database/water_quality.db")
 TABLE_NAME = "water_records"
-OUTPUT_JSON = "static/anomaly/anomaly_heatmap.json"
+OUTPUT_JSON = os.path.join(BACKEND_DIR, "static/anomaly/anomaly_heatmap.json")
 WINDOW_SIZE = 30 # How many hours to look at for one anomaly
 
 def run_anomaly_detection():
@@ -26,19 +31,24 @@ def run_anomaly_detection():
     single Plotly heatmap as a JSON file.
     """
     print("--- Starting Anomaly Detection Batch Job (Heatmap) ---")
+    # Ensure directories exist BEFORE trying to use them
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     os.makedirs(os.path.dirname(OUTPUT_JSON), exist_ok=True)
     
     # --- 1. Load and Preprocess Data ---
+    conn = None # Initialize conn
     try:
-        con = sqlite3.connect(DB_PATH)
-        df = pd.read_sql_query(f"SELECT * FROM {TABLE_NAME}", con, parse_dates=['timestamp'])
+        conn = sqlite3.connect(DB_PATH)
+        # Use timestampDate for parsing, as 'timestamp' is the raw string
+        df = pd.read_sql_query(f"SELECT * FROM {TABLE_NAME}", con, parse_dates=['timestampDate'])
     except Exception as e:
         print(f"🔴 ERROR: Could not read from database. {e}")
-        return
+        return # Exit if data can't be read
     finally:
-        con.close()
+        if conn: # Only close if connection was successful
+            conn.close()
 
-    df = df.dropna(subset=['stationId', 'timestamp'])
+    df = df.dropna(subset=['stationId', 'timestampDate'])
     
     # Get all numeric parameter columns
     exclude_cols = ['stationId', 'timestamp', 'timestampDate']
@@ -48,8 +58,9 @@ def run_anomaly_detection():
         print("🔴 ERROR: No numeric parameters found for anomaly detection.")
         return
 
-    df = df.groupby(['stationId', 'timestamp'], as_index=False)[params].mean()
-    df = df.sort_values(['stationId', 'timestamp'])
+    # Use timestampDate for sorting
+    df = df.groupby(['stationId', 'timestampDate'], as_index=False)[params].mean()
+    df = df.sort_values(['stationId', 'timestampDate'])
 
     def create_sequences(data, window_size):
         return np.array([data[i:i + window_size] for i in range(len(data) - window_size)])
@@ -98,7 +109,8 @@ def run_anomaly_detection():
         
         for i in range(len(mae)): # Loop through each sequence
             if mae[i].mean() > threshold: # If the *sequence* is anomalous
-                anomaly_timestamp = station_df.iloc[i + WINDOW_SIZE - 1]['timestamp']
+                # Get the timestamp from the end of the sequence
+                anomaly_timestamp = station_df.iloc[i + WINDOW_SIZE - 1]['timestampDate']
                 
                 # Find *which parameter* caused the anomaly
                 for param_idx, param in enumerate(params):
@@ -106,7 +118,7 @@ def run_anomaly_detection():
                     if param_mae > threshold: # If this specific param is bad
                         all_anomalies.append({
                             "stationId": station,
-                            "timestamp": anomaly_timestamp,
+                            "timestamp": anomaly_timestamp, # Use the parsed datetime
                             "Parameter": param
                         })
 
@@ -139,44 +151,19 @@ def run_anomaly_detection():
             row_hover.append(f"<b>Parameter: {col}</b><br>Station ID: {row}<br>Anomalies: {count}<br>Dates: {dates}")
         custom_hover.append(row_hover)
 
-    fig = go.Figure(data=go.Heatmap(
-        z=heatmap_values.values,
-        x=heatmap_values.columns,
-        y=heatmap_values.index.astype(str), # Ensure y-axis is string
-        text=custom_hover,
-        hoverinfo="text",
-        colorscale='Reds'
-    ))
-    
-    fig.update_layout(
-        title="Anomaly Count per Parameter and Station",
-        xaxis_title="Parameter",
-        yaxis_title="Station ID",
-        height=max(600, len(stations) * 20),
-        xaxis=dict(tickangle=315),
-        yaxis=dict(type='category')
-    )
-
-# models/anomaly_detection.py
-# ... (imports and previous code) ...
-
     # --- 4. Save Plot to JSON (REVISED for robust ndarray conversion and text) ---
     print(f"   Converting plot to JSON and ensuring standard list formats...")
 
     # Create the initial figure object
     fig = go.Figure(data=go.Heatmap(
-        # Use .values explicitly to get numpy array if heatmap_values is a DataFrame
-        z=heatmap_values.values if isinstance(heatmap_values, pd.DataFrame) else heatmap_values,
-        x=heatmap_values.columns.tolist() if isinstance(heatmap_values, pd.DataFrame) else [], # Convert columns to list
-        y=heatmap_values.index.astype(str).tolist() if isinstance(heatmap_values, pd.DataFrame) else [], # Convert index to list of strings
+        z=heatmap_values.values,
+        x=heatmap_values.columns.tolist(),
+        y=heatmap_values.index.astype(str).tolist(),
 
-        # --- ADDED/MODIFIED LINES for Text ---
-        text=heatmap_values.values if isinstance(heatmap_values, pd.DataFrame) else heatmap_values, # Use values as text
-        texttemplate="%{text:.0f}", # Display text as integer
-        hovertext=custom_hover,     # Use the detailed hover text we already created
-        hoverinfo="text",           # Show only the hovertext on hover (not z value again)
-        # --- END ADDED/MODIFIED LINES ---
-
+        text=heatmap_values.values,
+        texttemplate="%{text:.0f}",
+        hovertext=custom_hover,
+        hoverinfo="text",
         colorscale='Reds'
     ))
 
@@ -188,44 +175,37 @@ def run_anomaly_detection():
         xaxis=dict(tickangle=315),
         yaxis=dict(type='category')
     )
-    # ... (rest of the saving logic remains the same) ...
-    # Convert the figure to a dictionary AFTER creating it with potentially numpy data
+    
     fig_dict = fig.to_dict()
 
-    # Now, specifically target the z, x, y data within the dict and ensure they are lists
+    # Specifically target the z, x, y data within the dict and ensure they are lists
     if 'data' in fig_dict and len(fig_dict['data']) > 0 and isinstance(fig_dict['data'][0], dict):
         trace = fig_dict['data'][0]
-        for key in ['x', 'y', 'z']:
+        for key in ['x', 'y', 'z', 'text', 'hovertext']: # Check all data keys
             if key in trace:
                 data_array = trace[key]
-                # Check if it's numpy and convert
                 if isinstance(data_array, np.ndarray):
                     print(f"   Converting numpy array for key '{key}' to list...")
                     trace[key] = data_array.tolist()
-                # Additional check: If z is list but contains numpy types, convert inner elements
-                elif key == 'z' and isinstance(data_array, list):
-                    print(f"   Ensuring inner elements of 'z' list are standard types...")
+                elif key in ['z', 'text', 'hovertext'] and isinstance(data_array, list):
+                    # Ensure inner elements are also standard types
                     trace[key] = [
-                        [int(item) if isinstance(item, (np.integer, np.floating)) else item for item in row]
+                        [int(item) if isinstance(item, (np.integer, np.floating)) else str(item) for item in row]
                         if isinstance(row, (list, np.ndarray)) else row
                         for row in data_array
                     ]
 
     print(f"✅ Saving heatmap JSON (with standard lists) to: {OUTPUT_JSON}")
-    # Save the modified dictionary as JSON
     try:
         with open(OUTPUT_JSON, 'w') as f:
-            json.dump(fig_dict, f, indent=2) # Use indent for easier manual checking
+            json.dump(fig_dict, f, indent=2)
     except TypeError as e:
         print(f"🔴 ERROR: JSON serialization failed AFTER conversions: {e}")
     except Exception as e:
         print(f"🔴 ERROR: Failed to write JSON to {OUTPUT_JSON}: {e}")
 
-    # --- (END REVISED SECTION) ---
-
     print("--- Anomaly Detection Batch Job Complete ---")
 
 
-# --- Main execution block ---
 if __name__ == "__main__":
     run_anomaly_detection()

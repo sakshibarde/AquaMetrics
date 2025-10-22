@@ -6,22 +6,32 @@ import math
 import sqlite3
 from sklearn.preprocessing import StandardScaler
 
-DB_PATH = "database/water_quality.db" # Corrected Path
-TABLE_NAME = "water_records"         # Corrected Table Name
-SAVE_DIR = "static/daynight"
+# --- Build Absolute Paths ---
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+BACKEND_DIR = os.path.dirname(SCRIPT_DIR)
+# --- END NEW ---
+
+# --- CONFIGURATION (Using Absolute Paths) ---
+DB_PATH = os.path.join(BACKEND_DIR, "database/water_quality.db")
+TABLE_NAME = "water_records"
+SAVE_DIR = os.path.join(BACKEND_DIR, "static/daynight")
 
 def run_day_night_analysis():
     print("--- Starting Day/Night Analysis Batch Job ---")
+    # Ensure directories exist BEFORE trying to use them
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     os.makedirs(SAVE_DIR, exist_ok=True)
 
+    conn = None # Initialize conn
     try:
         conn = sqlite3.connect(DB_PATH)
         df = pd.read_sql(f"SELECT * FROM {TABLE_NAME}", conn)
     except Exception as e:
         print(f"🔴 ERROR: Could not read from database. {e}")
-        return
+        return # Exit if data can't be read
     finally:
-        conn.close()
+        if conn: # Only close if connection was successful
+            conn.close()
 
     df['timestampDate'] = pd.to_datetime(df['timestampDate'])
     df['hour'] = df['timestampDate'].dt.hour
@@ -38,7 +48,11 @@ def run_day_night_analysis():
             continue
             
         scaler = StandardScaler()
-        sdata[params] = scaler.fit_transform(sdata[params])
+        # Handle potential empty params slice if all columns are excluded
+        if not sdata[params].empty:
+            sdata[params] = scaler.fit_transform(sdata[params])
+        else:
+            continue
 
         valid_dates = sdata.groupby('date')['period'].nunique()
         valid_dates = valid_dates[valid_dates == 2].index
@@ -50,7 +64,12 @@ def run_day_night_analysis():
 
         rows, cols = math.ceil(len(params) / 3), 3
         fig, axes = plt.subplots(rows, cols, figsize=(15, 4*rows), sharex=True)
-        axes = axes.flatten()
+        
+        # Ensure axes is always an array
+        if rows == 1 and cols == 1:
+            axes = [axes]
+        else:
+            axes = axes.flatten()
 
         for i, p in enumerate(params):
             ax = axes[i]
@@ -68,3 +87,6 @@ def run_day_night_analysis():
         plt.close()
         print(f"✅ Saved Day/Night plot for station {sid}")
     print("--- Day/Night Analysis Complete ---")
+
+if __name__ == "__main__":
+    run_day_night_analysis()
