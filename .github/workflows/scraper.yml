@@ -92,12 +92,18 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           # Check if the database file actually changed
           git add backend/database/water_quality.db # <-- ADDS FIRST
-          git pull --rebase=true
+          # Check for changes. If there are none, do nothing.
           if git diff --staged --quiet; then
             echo "No changes to database file."
           else
-            echo "Database updated. Committing..."
+            # If there ARE changes, commit them LOCALLY first.
+            echo "Database updated. Committing locally..."
             git commit -m "Hourly database update"
+
+            # NOW, pull and rebase our new commit on top of remote changes.
+            git pull --rebase=true
+
+            # Finally, push the rebased commit.
             git push
           fi
 
@@ -128,12 +134,17 @@ jobs:
           git add backend/static/correlation/*.json
           git add backend/static/anomaly/*.json
           git add backend/static/daynight/*.png
-          # Check if any added files actually have changes
-          git pull --rebase=true
+          # Check for changes. If there are none, do nothing.
           if git diff --staged --quiet; then
             echo "No changes detected in generated plot/summary files."
           else
-            echo "Changes detected. Committing generated files..."
-            git commit -m "Update generated analysis plots and summaries"
+            # If there ARE changes, commit them LOCALLY first.
+            echo "Changes detected. Committing generated files locally..."
+            git commit -m "Update generated analysis"
+
+            # NOW, pull and rebase our new commit on top of remote changes.
+            git pull --rebase=true
+
+            # Finally, push the rebased commit.
             git push
           fi
