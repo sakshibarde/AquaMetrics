@@ -40,7 +40,8 @@ def run_anomaly_detection():
     try:
         conn = sqlite3.connect(DB_PATH)
         # Use timestampDate for parsing, as 'timestamp' is the raw string
-        df = pd.read_sql_query(f"SELECT * FROM {TABLE_NAME}", con, parse_dates=['timestampDate'])
+        df = pd.read_sql_query(f"SELECT * FROM {TABLE_NAME}", con) # Read as text
+        df['timestampDate'] = pd.to_datetime(df['timestampDate'], errors='coerce') # Convert manually
     except Exception as e:
         print(f"🔴 ERROR: Could not read from database. {e}")
         return # Exit if data can't be read

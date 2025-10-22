@@ -59,7 +59,8 @@ def create_daily_prediction_plots(output_json_dir=os.path.join(STATIC_PRED_DIR, 
     conn = None # Initialize conn
     try:
         conn = sqlite3.connect(DB_PATH)
-        df = pd.read_sql_query("SELECT * FROM water_records", con, parse_dates=["timestampDate"])
+        df = pd.read_sql_query("SELECT * FROM water_records", con) # Read as text
+        df['timestampDate'] = pd.to_datetime(df['timestampDate'], errors='coerce') # Convert manually
     except Exception as e:
         print(f"🔴 ERROR: Could not read from database. {e}")
         return # Exit if data can't be read
@@ -144,7 +145,8 @@ def create_weekly_prediction_plots(
     conn = None # Initialize conn
     try:
         conn = sqlite3.connect(DB_PATH)
-        df = pd.read_sql_query("SELECT * FROM water_records", con, parse_dates=["timestampDate"])
+        df = pd.read_sql_query("SELECT * FROM water_records", con) # Read as text
+        df['timestampDate'] = pd.to_datetime(df['timestampDate'], errors='coerce') # Convert manually
     except Exception as e:
         print(f"🔴 ERROR: Could not read from database. {e}")
         return # Exit if data can't be read
