@@ -219,7 +219,7 @@ def create_weekly_prediction_plots(
         fig = go.Figure()
         fig.add_trace(go.Scatter(
             x=WEEKLY_FEATURES, 
-            y=weekly_avg__pred,
+            y=weekly_avg_pred,
             name=f'Predicted Weekly Avg',
             marker_color='red',
             mode='lines+markers'
