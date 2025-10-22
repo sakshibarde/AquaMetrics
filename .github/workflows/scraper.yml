@@ -66,11 +66,11 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout the LATEST commit from main
         uses: actions/checkout@v4
-        # Fetch full history - might be needed if batch jobs analyze trends
         with:
-          fetch-depth: 0
+          fetch-depth: 0 
+          ref: 'main'
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v5
