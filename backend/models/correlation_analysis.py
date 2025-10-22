@@ -32,7 +32,7 @@ def run_correlation_analysis():
     conn = None # Initialize conn
     try:
         conn = sqlite3.connect(DB_PATH)
-        df = pd.read_sql_query(f"SELECT * FROM {TABLE_NAME}", con)
+        df = pd.read_sql_query(f"SELECT * FROM {TABLE_NAME}", conn)
     except Exception as e:
         print(f"🔴 ERROR: Could not read from database. {e}")
         return # Exit if data can't be read

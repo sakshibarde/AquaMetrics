@@ -33,7 +33,7 @@ def run_day_night_analysis():
         if conn: # Only close if connection was successful
             conn.close()
 
-    df['timestampDate'] = pd.to_datetime(df['timestampDate'], errors='coerce')
+    df['timestampDate'] = pd.to_datetime(df['timestampDate'], errors='coerce', format='mixed')
     df['hour'] = df['timestampDate'].dt.hour
     df['date'] = df['timestampDate'].dt.date
     df['period'] = df['hour'].apply(lambda h: 'Day' if 6 <= h < 18 else 'Night')
