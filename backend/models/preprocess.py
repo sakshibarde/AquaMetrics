@@ -33,6 +33,24 @@ def organize_records(df: pd.DataFrame):
 def clean_and_fill(df_new: pd.DataFrame):
     conn = sqlite3.connect(DB_PATH)
 
+    # --- 1. ADD TIMESTAMP CONVERSION ---
+    print("Parsing timestamp...")
+    if 'timestamp' not in df_new.columns:
+        print("🔴 ERROR: 'timestamp' column missing in data.")
+        return pd.DataFrame() # Return empty
+    try:
+        # Assuming timestamp string is like 'YYYY-MM-DD HH:MM:SS'
+        df_new['timestampDate'] = pd.to_datetime(df_new['timestamp'], errors='coerce')
+    except Exception as e:
+        print(f"🔴 ERROR converting 'timestamp' column: {e}")
+        df_new['timestampDate'] = pd.NaT
+
+    # Drop rows where timestamp couldn't be parsed
+    df_new = df_new.dropna(subset=['timestampDate'])
+    if df_new.empty:
+        print("🟡 No valid data remaining after timestamp parsing.")
+        return df_new
+
     # --- 1. Load historical data (for mean reference) ---
     try:
         df_hist = pd.read_sql(f"SELECT * FROM {TABLE_NAME}", conn)
