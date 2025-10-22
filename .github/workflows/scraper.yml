@@ -80,9 +80,7 @@ jobs:
       - name: Install Full Dependencies
         run: |
           python -m pip install --upgrade pip
-          # Install all packages needed by update_pipeline.py AND run_all_batch_jobs.py
-          # Adjust this list based on your actual project requirements!
-          pip install pandas requests numpy tensorflow scikit-learn plotly joblib apscheduler Flask Flask-Cors
+          pip install pandas requests numpy tensorflow scikit-learn plotly joblib apscheduler Flask Flask-Cors matplotlib
 
       - name: Run Database Update Pipeline
         # Run the script located in the backend directory
