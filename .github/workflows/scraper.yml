@@ -91,8 +91,8 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           # Check if the database file actually changed
+          git add backend/database/water_quality.db # <-- ADDS FIRST
           git pull --rebase=true
-          git add backend/database/water_quality.db
           if git diff --staged --quiet; then
             echo "No changes to database file."
           else
@@ -118,7 +118,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull --rebase=true
+          
           echo "Checking for changes in generated files..."
           # Add all potentially generated/updated files from batch jobs
           git add backend/static/predictions/daily/*.json
@@ -129,6 +129,7 @@ jobs:
           git add backend/static/anomaly/*.json
           git add backend/static/daynight/*.png
           # Check if any added files actually have changes
+          git pull --rebase=true
           if git diff --staged --quiet; then
             echo "No changes detected in generated plot/summary files."
           else
