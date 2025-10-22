@@ -101,8 +101,11 @@ LOCATIONS_CSV_PATH = "backend/data/cpcb_station_locations.csv"
 # Function to fetch data (SSL verification disabled)
 def fetch_data(url: str):
     """Fetches JSON data from the specified URL, disabling SSL verification."""
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    }
     try:
-        response = requests.get(url, verify=False, timeout=60) # Increased timeout
+        response = requests.get(url, headers=headers, verify=False, timeout=60) # Increased timeout
         response.raise_for_status() # Raise HTTPError for bad responses (4xx or 5xx)
         print(f"Successfully fetched data from {url}")
         return response.json()
