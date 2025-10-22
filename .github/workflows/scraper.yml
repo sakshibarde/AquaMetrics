@@ -93,7 +93,7 @@ jobs:
       # Uses github.run_attempt to avoid re-running on workflow retries within the same hour.
       - name: Run All Batch Jobs (Daily ~00:05 UTC)
         # Check if it's the first attempt for this run AND if the schedule matches the daily run time
-        if: github.run_attempt == '1' && startsWith(github.event.schedule, '5 0 * * *')
+        if: (github.run_attempt == '1' && startsWith(github.event.schedule, '5 0 * * *')) || (github.event_name == 'workflow_dispatch')
         run: |
           echo "Running daily batch jobs..."
           # Run the script located in the backend directory
@@ -101,7 +101,7 @@ jobs:
 
       - name: Commit Generated Plot Files (Daily)
         # Run only if the daily batch jobs step likely ran (matches the 'if' condition above)
-        if: github.run_attempt == '1' && startsWith(github.event.schedule, '5 0 * * *')
+        if: (github.run_attempt == '1' && startsWith(github.event.schedule, '5 0 * * *')) || (github.event_name == 'workflow_dispatch')
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
