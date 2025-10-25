@@ -153,7 +153,7 @@ def preprocess_and_store_data():
     # Identify parameter columns (all except known metadata)
     meta_cols = ['stationId', 'stationName', 'location', 'timestamp', 'timestampDate', 'id']
     param_cols = sorted([col for col in processed_df.columns if col not in meta_cols]) # Sort for consistent table creation
-    db_cols = ['stationId', 'timestampDate'] + param_cols
+    db_cols = ['stationId', 'timestamp', 'timestampDate'] + param_cols
     df_to_store = processed_df[[col for col in db_cols if col in processed_df.columns]].copy()
     # Replace any remaining Pandas NA types with None for SQLite compatibility
     df_to_store = df_to_store.replace({pd.NA: None, np.nan: None})
