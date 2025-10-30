@@ -36,37 +36,74 @@
 
 
 # replace_with_new_data.py
+# File: convert_csv_to_db.py
+# Place this file in your main project folder (hydro-predicta-flow-main) and run it once.
+
 import pandas as pd
 import sqlite3
 import os
 
-# --- CONFIGURE THESE PATHS ---
-DB_PATH = "database/water_quality.db"
-TABLE_NAME = "water_records"
-NEW_DATA_PATH = "C:\\Users\\hp\\Downloads\\hydro-predicta-flow-main\\backend\\data\\preprocessed_combined_station_data.csv"  # your new version containing all data
+# --- 1. YOUR CSV FILE PATH ---
+# This is the path you provided.
+CSV_FILE_PATH = r"C:\Users\hp\Downloads\hydro-predicta-flow-main\backend\data\preprocessed_combined_station_data.csv"
 
-def replace_database_with_new_data():
-    print("--- Starting Full Database Replacement ---")
+# --- 2. YOUR DATABASE OUTPUT PATH ---
+# This is the correct path for your backend application.
+DB_FILE_PATH = '../database/water_quality.db'
 
-    if not os.path.exists(NEW_DATA_PATH):
-        print(f"❌ ERROR: New CSV file not found at: {NEW_DATA_PATH}")
+# --- 3. YOUR TABLE NAME ---
+TABLE_NAME = 'water_records'
+
+def convert_csv_to_sqlite():
+    print("--- Starting One-Time CSV to DB Conversion ---")
+    
+    # Check if the CSV file exists
+    if not os.path.exists(CSV_FILE_PATH):
+        print(f"🔴 ERROR: CSV file not found at: {CSV_FILE_PATH}")
+        print("Please check the path and try again.")
         return
 
-    print(f"📥 Reading new dataset: {NEW_DATA_PATH}")
-    new_df = pd.read_csv(NEW_DATA_PATH)
-
-    if new_df.empty:
-        print("⚠️ ERROR: New dataset is empty. Aborting.")
+    print(f"Reading data from {CSV_FILE_PATH}...")
+    try:
+        # Read your clean CSV
+        df = pd.read_csv(CSV_FILE_PATH)
+    except Exception as e:
+        print(f"🔴 ERROR: Could not read CSV file. {e}")
         return
 
-    # Connect to the SQLite database
-    con = sqlite3.connect(DB_PATH)
+    if df.empty:
+        print("🔴 ERROR: Your CSV file is empty. Aborting.")
+        return
 
-    print(f"💾 Replacing table '{TABLE_NAME}' with {len(new_df)} rows...")
-    new_df.to_sql(TABLE_NAME, con, if_exists='replace', index=False)
+    print(f"Successfully read {len(df)} rows.")
+    
+    # Ensure the database directory (backend/database) exists
+    db_dir = os.path.dirname(DB_FILE_PATH)
+    os.makedirs(db_dir, exist_ok=True)
+    print(f"Ensured database directory exists: {db_dir}")
 
-    con.close()
-    print("✅ Database successfully replaced with new version!")
+    try:
+        # Connect to the SQLite database (this will create it if it doesn't exist)
+        conn = sqlite3.connect(DB_FILE_PATH)
+        
+        print(f"Writing data to table '{TABLE_NAME}' in {DB_FILE_PATH}...")
+        
+        # This command replaces the entire 'water_records' table with your CSV data
+        df.to_sql(
+            TABLE_NAME, 
+            conn, 
+            if_exists='replace',  # This drops any old, bad table
+            index=False           # Don't save the pandas (0, 1, 2...) index
+        )
+        
+        print("✅ Success! Your new database has been created.")
+        print("You can now verify the file in DB Browser and then push it to GitHub.")
+        
+    except Exception as e:
+        print(f"🔴 ERROR: Could not write to database. {e}")
+    finally:
+        if 'conn' in locals() and conn:
+            conn.close()
 
 if __name__ == "__main__":
-    replace_database_with_new_data()
+    convert_csv_to_sqlite()
