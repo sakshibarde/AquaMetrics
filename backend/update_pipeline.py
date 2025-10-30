@@ -158,8 +158,10 @@ def preprocess_and_store_data():
     # Replace any remaining Pandas NA types with None for SQLite compatibility
     df_to_store = df_to_store.replace({pd.NA: None, np.nan: None})
 
-    # Convert datetime objects to ISO 8601 strings using strftime
+    # Convert datetime objects to strings for SQLite
     df_to_store['timestampDate'] = df_to_store['timestampDate'].dt.strftime('%Y-%m-%dT%H:%M:%S')
+    # --- ADD THIS LINE ---
+    df_to_store['timestamp'] = df_to_store['timestamp'].dt.strftime('%Y-%m-%d %H:%M:%S')
 
     # --- 4. Store Data in SQLite Database ---
     print(f"Connecting to database: {DB_PATH}")
