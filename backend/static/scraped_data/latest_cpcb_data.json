@@ -44,7 +44,7 @@
     "Chemical Oxygen Demand": 5.0,
     "Chloride": 5.0,
     "Conductivity": 248.6,
-    "Depth": 0.22,
+    "Depth": 0.21,
     "Dissolved Oxygen": 1.44,
     "Nitrate": 0.3,
     "Total Organic Carbon": 1.0,
@@ -155,10 +155,10 @@
     "Depth": 0.61,
     "Dissolved Oxygen": 7.44,
     "Nitrate": 2.2,
-    "Total Organic Carbon": 6.9,
+    "Total Organic Carbon": 5.64,
     "Water Level": 112.57,
     "Water Temperature": 31.72,
-    "Water Turbidity": 351.16,
+    "Water Turbidity": 351.28,
     "pH": 7.52
   },
   {
@@ -187,7 +187,7 @@
     "Biochemical Oxygen Demand": 5.47,
     "Chemical Oxygen Demand": 21.62,
     "Chloride": 95.22,
-    "Conductivity": 1018.73,
+    "Conductivity": 1017.69,
     "Depth": 1.43,
     "Dissolved Oxygen": 2.72,
     "Nitrate": 1.53,
@@ -245,10 +245,10 @@
     "Depth": 0.88,
     "Dissolved Oxygen": 8.4,
     "Nitrate": 2.29,
-    "Total Organic Carbon": 5.91,
+    "Total Organic Carbon": 5.83,
     "Water Level": 93.49,
     "Water Temperature": 30.64,
-    "Water Turbidity": 246.19,
+    "Water Turbidity": 245.32,
     "pH": 8.11
   },
   {
@@ -256,7 +256,7 @@
     "stationName": "UT65_Balu ghat bridge, Chunar",
     "location": "Uttar Pradesh",
     "timestamp": "2026-08-26 08:30:00",
-    "Biochemical Oxygen Demand": 3.4,
+    "Biochemical Oxygen Demand": 3.34,
     "Chemical Oxygen Demand": 15.54,
     "Chloride": 41.3,
     "Conductivity": 447.6,
@@ -321,7 +321,7 @@
     "Water Level": 100.62,
     "Water Temperature": 32.4,
     "Water Turbidity": 79.24,
-    "pH": 8.48
+    "pH": 8.37
   },
   {
     "stationId": "11801",
@@ -356,7 +356,7 @@
     "Total Organic Carbon": 8.39,
     "Water Level": 101.12,
     "Water Temperature": 31.36,
-    "Water Turbidity": 33.78,
+    "Water Turbidity": 35.81,
     "pH": 8.35
   },
   {
@@ -429,7 +429,7 @@
     "Water Level": 46.08,
     "Water Temperature": 32.37,
     "Water Turbidity": 118.85,
-    "pH": 7.36
+    "pH": 7.35
   },
   {
     "stationId": "11807",
@@ -479,10 +479,10 @@
     "Depth": 1.14,
     "Dissolved Oxygen": 6.32,
     "Nitrate": 0.3,
-    "Total Organic Carbon": 5.27,
+    "Total Organic Carbon": 5.37,
     "Water Level": 35.93,
     "Water Temperature": 29.61,
-    "Water Turbidity": 491.5,
+    "Water Turbidity": 505.8,
     "pH": 7.82
   },
   {
@@ -492,8 +492,8 @@
     "timestamp": "2026-08-26 08:30:00",
     "Biochemical Oxygen Demand": 2.14,
     "Chemical Oxygen Demand": 11.85,
-    "Chloride": 11.58,
-    "Conductivity": 230.5,
+    "Chloride": 10.01,
+    "Conductivity": 238.9,
     "Depth": 0.69,
     "Dissolved Oxygen": 6.6,
     "Nitrate": 0.3,
@@ -601,9 +601,9 @@
     "Biochemical Oxygen Demand": 1.41,
     "Chemical Oxygen Demand": 6.38,
     "Chloride": 28.23,
-    "Conductivity": 247.7,
+    "Conductivity": 254.55,
     "Depth": 0.85,
-    "Dissolved Oxygen": 7.87,
+    "Dissolved Oxygen": 7.64,
     "Nitrate": 0.3,
     "Total Organic Carbon": 3.3,
     "Water Level": 12.04,
@@ -681,7 +681,7 @@
     "Water Level": null,
     "Water Temperature": 30.85,
     "Water Turbidity": 331.05,
-    "pH": 8.16
+    "pH": 8.12
   },
   {
     "stationId": "11821",
